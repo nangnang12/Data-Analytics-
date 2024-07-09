@@ -27,7 +27,7 @@ format:
 
 <br>
 
-[7주 과제 \>]{style="color: red;"}
+[7주 과제 \>]{style="color: darkorange;"}
 
 -   팀 별 Project Statement 정리
 
