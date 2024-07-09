@@ -1,0 +1,25 @@
+h1 {
+  font-size: 2.4em;
+  margin-top: 0.5em; /* 제목과 본문 사이 간격을 줄임 */
+  margin-bottom: 0.5em; /* 필요에 따라 제목 아래 간격 조정 */
+}
+
+h2, h3, h4, h5, h6 {
+  font-size: 1.4em;
+  margin-top: 0.5em; /* 제목과 본문 사이 간격을 줄임 */
+  margin-bottom: 0.5em; /* 필요에 따라 제목 아래 간격 조정 */
+}
+
+ul, ol {
+  margin-top: 0.2em; /* 목록 위 간격을 줄임 */
+  margin-bottom: 0.2em; /* 목록 아래 간격을 줄임 */
+  padding-left: 1.5em;
+}
+
+/* 기타 요소에 대한 간격 조정 */
+p {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+/* 필요에 따라 다른 요소도 간격을 조정할 수 있습니다 */
