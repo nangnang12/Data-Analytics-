@@ -1,7 +1,0 @@
----
-title: "sejong_example"
----
-
-```{r}
-a <- 100
-```

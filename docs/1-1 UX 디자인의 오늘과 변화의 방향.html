@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko-KR" xml:lang="ko-KR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.53">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; 1-1. UX 디자인의 오늘과 변화의 방향 – bitPublish를 이용하여 한글 책 조판하기</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./1-2 UX 디자인과 데이터, AI.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-1 UX 디자인의 오늘과 변화의 방향.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">1-1. UX 디자인의 오늘과 변화의 방향</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="검색" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">bitPublish를 이용하여 한글 책 조판하기</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="검색"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">머릿말: 이 책에서 다루는 것과 다루지 않는 것</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-1 UX 디자인의 오늘과 변화의 방향.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">1-1. UX 디자인의 오늘과 변화의 방향</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-2 UX 디자인과 데이터, AI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">1-2. UX 디자인과 데이터, AI</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-3 데이터 기반 디자인 (Data Driven Design).html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">1-3. 데이터 기반 디자인 (Data Driven Design)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">참고문헌</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#switching-to-digital-디자인-대상의-변화" id="toc-switching-to-digital-디자인-대상의-변화" class="nav-link active" data-scroll-target="#switching-to-digital-디자인-대상의-변화"><span class="header-section-number">2.0.1</span> Switching to Digital (디자인 대상의 변화)</a></li>
+  <li><a href="#from-user-to-people-서비스를-사용하는-주체의-변화" id="toc-from-user-to-people-서비스를-사용하는-주체의-변화" class="nav-link" data-scroll-target="#from-user-to-people-서비스를-사용하는-주체의-변화"><span class="header-section-number">2.0.2</span> from User to People (서비스를 사용하는 주체의 변화)</a></li>
+  <li><a href="#data-driven-design-디자인-방법론의-변화" id="toc-data-driven-design-디자인-방법론의-변화" class="nav-link" data-scroll-target="#data-driven-design-디자인-방법론의-변화"><span class="header-section-number">2.0.3</span> Data Driven Design (디자인 방법론의 변화)</a></li>
+  <li><a href="#참고-교재의-목차로-알아보는-ux-design의-키워드" id="toc-참고-교재의-목차로-알아보는-ux-design의-키워드" class="nav-link" data-scroll-target="#참고-교재의-목차로-알아보는-ux-design의-키워드"><span class="header-section-number">2.0.4</span> 참고 교재의 목차로 알아보는 UX Design의 키워드</a></li>
+  <li><a href="#실습과제-1-내-디자인-프로젝트-리뷰" id="toc-실습과제-1-내-디자인-프로젝트-리뷰" class="nav-link" data-scroll-target="#실습과제-1-내-디자인-프로젝트-리뷰"><span class="header-section-number">2.0.5</span> 실습과제 1 : 내 디자인 프로젝트 리뷰</a></li>
+  <li><a href="#실습과제-1-check-point" id="toc-실습과제-1-check-point" class="nav-link" data-scroll-target="#실습과제-1-check-point"><span class="header-section-number">2.0.6</span> 실습과제 1 Check Point!</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">1-1. UX 디자인의 오늘과 변화의 방향</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>본 교재가 UX 디자인의 방법론으로서의 데이터 기반 디자인과 A/B 테스팅을 주제로 다루고 있으므로, 이 주제가 UX 디자인의 전체 모습에서 어떻게 위치하고 있는지를 이해하기 위하여 UX 디자인의 큰 그림을 한 번 조망해 볼 필요가 있다고 생각됩니다. 이 큰 그림을 제가 가진 제한된 경험 안에서 스스로 그려내기는 어려울 것 같고, 오랜 시간동안 제가 근간으로 여겨 온 한 권의 책을 기준으로 책 내용의 목차 변화를 관찰해 보면서 서술하고자 합니다. Interaction Design - beyond Human-Computer Interaction, 이 책은 2002년 첫 판이 나온 이후 업데이트를 지속하여 2023년 6판이 나와있는 책인데, 제목에 UX 디자인이라는 말이 들어있지도 않고, 저자들이 디자이너도 아니지만, 오랜 시간 UX디자인의 지식 변화를 교과서 형식의 책으로 담아왔다는 점에서 관심있게 볼 만한 지식 체계라고 생각합니다.(1) 이 책의 모든 개정판을 읽어온 독자로서 발견한 UX 디자인의 키워드 변화들을 중심으로 UX 디자인이 어떤 방향을 바라보고 있는지를 정리해 보겠습니다.</p>
+<section id="switching-to-digital-디자인-대상의-변화" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="switching-to-digital-디자인-대상의-변화"><span class="header-section-number">2.0.1</span> Switching to Digital (디자인 대상의 변화)</h3>
+<p>1990년대 중반 이전에는 복잡하고 기능이 많은 전자 기기들이 대표적인 UX 디자인의 대상으로 인식 되었다면, 그 대상은 인터넷을 플랫폼으로 하는 웹과 모바일 디바이스에서 구현되는 앱 서비스로 진화해왔고, 이들은 또 플랫폼의 경계가 없거나, 매우 다양한 플랫폼에서 제공되는 서비스 및 가상 세계의 사용자 경험으로, 나아가 우리가 경험해 온 물리적 세계에서는 존재하지 않았던 인공지능과 로봇, 그 외의 다양한 디지털 존재들이 공존하는 세계에 대한 디자인으로 확장되고 있습니다. 이러한 사용자 경험 확대 현상의 배경에는 점점 더 커지고 있는 디지털 데이터와 디지털 서비스 기술이 있습니다. 시간과 공간, 물리적 한계를 넘어서는 경험에 대한 UX 디자인은 계속 새로이 창조되고 있으며, 기술의 발전을 바탕으로 그 다양성과 속도가 가속화 되는 중입니다. UX 디자인은 사용자들의 눈높이에 맞는 경험을 제공하는 번역가의 역할에서, 새로운 경험을 창조하고 소개하는 소설가 같은 역할로 변모하고 있습니다. 우리는 현재 시점의 사용자 경험의 영역에 머무르지 말고, 아직 발견되지 않은 새로운 경험의 영역에 대하여 열린 마음을 갖고 탐험할 준비가 되어 있어야 하겠습니다.</p>
+</section>
+<section id="from-user-to-people-서비스를-사용하는-주체의-변화" class="level3" data-number="2.0.2">
+<h3 data-number="2.0.2" class="anchored" data-anchor-id="from-user-to-people-서비스를-사용하는-주체의-변화"><span class="header-section-number">2.0.2</span> from User to People (서비스를 사용하는 주체의 변화)</h3>
+<p>보통 UX 디자인을 제공하는 대상은 사용자(User)로 부르고, 사용자 중심의 디자인(UCD :User Centered Design)은 사용자 경험 디자인의 가장 기본적인 패러다임으로 인식되었습니다. 그런데 이 사용자의 개념이 확장되고 있습니다. 이 확장된 사용자는 사람(People)으로 부릅니다. (이것 참 People 번역을 어떻게 하는게 적절할지 모르겠네요.) ’People’은 인지 과학자이며, UX 디자인 연구자인 도널드 노먼(Don Norman)이 2018년 제시한 용어로, 개별 사용자 뿐 아니라 여러 사람이 모인 집단, 나아가 사회 구성원들을 의미하는 단어로 소셜 미디어 같이 많은 사람들이 참여하는 커뮤니티를 포함하는 보다 넓은 사용자의 개념입니다. 사람 중심의 디자인(People Centered Design)은 기존의 개별 사용자, 또는 특정 속성을 가지는 사용자 집단의 니즈(Needs)와 역량에 맞추어 사용자 경험을 제공하는 서비스 보다는 더 넓은 범위인 일반 사용자들의 경험과 신체적, 인지적, 사회적 제약이 있는 사용자들도 누구나 참여할 수 있는 사용자 경험을 지향합니다. 그만큼 UX 디자인을 제공하는 대상이 넓어지고, 대중화 되었다는 의미이기도 하고, 어떤 서비스의 경험을 디자인 할 때, 서비스를 직접 사용하는 사용자의 범위가 넓어진 만큼이나 그 서비스와 직접, 또는 간접적으로 관련된 사람들도 다양하고 많아졌다는 의미입니다.</p>
+<p>예를 들어, 디지털 금융 서비스는 각 개별 사용자의 금융 정보에 대한 서비스로서, 어떤 디바이스를 사용하는 지에 상관없이 사용 가능해야하며, 신체적 제약이 있는 사용자에게도 문제없이 서비스를 제공해야 합니다. 또 이것은 은행 사용자가 고객 사용자들의 금융 정보를 관리하는 서비스이고, 각 은행의 금융 정보는 통합, 또는 재구성 되어 제 3의 사용자를 통하여 새로운 금융 정보를 생성하기도 합니다. 그리고 이 정보들은 각 개인들 뿐 아니라, 세금 수납과 보험료 납부와 같은 행정 업무를 바탕으로 여러 공공 기관을 비롯한 기업 사용자들과도 연계되어 있습니다. ATM 단말기 같은 디바이스에서 한 개인의 계좌에 입력된 단편적인 금융 정보는 수많은 금융 관련 시스템에서 다양한 시각으로 해석되고, 재생산됩니다. 이렇게 현재의 사용자의 개념은 작용 대상이 넓고, 다양한 시각을 가지는 주체들의 총합으로 이해되어야 합니다.</p>
+<p>그리고 많은 서비스의 경우 사용자의 국적이나 언어, 거주지 등, 물리적인 제약과 관련 없이 사용되고, 사용 상황이 다른 여러 사용자간의 상호 협력을 지원하며, 심지어는 인간 사용자가 아닌 기계(인공지능)와의 협력 방법들도 제공하고 있습니다. 이렇게 넓고 다중적인 사용자 경험을 제공하기 위하여 디자이너는 다양한 사용자 요구를 이해하고 반영할 수 있는 역량을 준비해야 하겠습니다.</p>
+</section>
+<section id="data-driven-design-디자인-방법론의-변화" class="level3" data-number="2.0.3">
+<h3 data-number="2.0.3" class="anchored" data-anchor-id="data-driven-design-디자인-방법론의-변화"><span class="header-section-number">2.0.3</span> Data Driven Design (디자인 방법론의 변화)</h3>
+<p>UX 디자인의 도구나 방법의 영역에서는 데이터의 활용이 중요한 키워드로 떠오르고 있습니다. 사용자들이 디지털 서비스를 사용하면서 남기는 사용자 행동의 흔적들은 거대한 데이터가 되어 사용자 경험의 내용을 통계적으로 측정할 수 있도록 합니다. 지금까지 디자인 리서치에 주로 사용해온 대면 조사, 사용 현장 중심의 조사 방법론들이 소수의 사용자들을 대상으로한 질적 연구였다면, 데이터를 이용한 디자인 방법론은 대규모 사용자를 대상으로 통계적 분석과 사용자 경험의 통계적 모델링을 가능하게 하는 연구이며, 지속적인 데이터 축적을 통하여 서비스 변화에 따른 결과 예측이 가능하고, 다양한 협업 부서와 연계하여 데이터의 활용도를 높이는 방법론입니다. 이제는 디지털 디바이스들을 통하여 데이터를 축적하고, 이 데이터를 활용하여 사용자 경험을 이해하는 방법, 데이터 중심의 디자인 프로세스, 데이터 기반의 다양한 협업 방법, 데이터 기반의 디자인 평가와 예측 기법 등이 UX 디자인 방법론의 영역으로 들어왔습니다. 이 책은 이러한 데이터와 UX 디자인의 연결 지점들을 검토하고, 디자이너의 시각에서 데이터를 이해하고 관리하는 방법을 실행해보는 실습 내용을 제공합니다. 이 책의 안내를 바탕으로 독자 여러분의 디자인 학습과 실행의 과정에 데이터 기반 디자인 방법들이 잘 활용될 수 있기를 바랍니다.</p>
+<p>아래의 기사에서는 AI가 개별 사용자의 데이터를 바탕으로 각 사용자에게 맞는 UI를 자동적으로 실시간 생성하여 제공하는 Generative UI 시대의 도래를 예고하고 있습니다. 서비스의 UX/UI를 디자이너가 미리 만들어 두고 예상 경로대로 제시하는 것이 아니라, 사용자의 니즈와 사용 데이터에 따라 각 사용자에게 필요한 서비스를 실시간으로 구성해내는 것입니다. 이렇게 된다면 디자이너는 사용자의 니즈를 매우 다른 방법으로 측정하고 디자인하게 될 것입니다. (2)</p>
+<p><a href="https://www.nngroup.com/articles/generative-ui/">Generative UI and Outcome-Oriented Design</a></p>
+</section>
+<section id="참고-교재의-목차로-알아보는-ux-design의-키워드" class="level3" data-number="2.0.4">
+<h3 data-number="2.0.4" class="anchored" data-anchor-id="참고-교재의-목차로-알아보는-ux-design의-키워드"><span class="header-section-number">2.0.4</span> 참고 교재의 목차로 알아보는 UX Design의 키워드</h3>
+<p>다음의 내용은 본 교재의 학습 내용에 대한 것은 아니지만, UX Design의 지식 체계에 대한 큰 그림을 키워드로 볼 수 있다고 생각되어 앞에서 소개한 참고도서인 Interaction Design의 목차를 소개합니다.(1) 목차의 내용을 보면서 어떤 키워드들을 공부해하는지 확인해 보세요. 특히 소제목의 키워드들을 보면 최근의 UX 디자인의 이슈들을 잘 체감할 수 있습니다. (웹 버전은 드롭 다운으로 소제목이 보이게 하기)</p>
+<ul>
+<li><p>ch1. What is Interaction Design?</p>
+<p>1.1 Introduction</p>
+<p>1.2 Good and Poor Design</p>
+<p>1.3 Switching to Digital</p>
+<p>1.4 What to Design</p>
+<p>1.5 What Is Interaction Design?</p>
+<p>1.6 People-Centered Design</p>
+<p>1.7 Understanding People</p>
+<p>1.8 Accessibility and Inclusiveness</p>
+<p>1.9 Usability and User Experience Goals</p></li>
+<li><p>ch2. The process of Interaction Design?</p>
+<p>2.1 Introduction</p>
+<p>2.2 What Is Involved in Interaction Design?</p>
+<p>2.3 Some Practical Issues</p></li>
+<li><p>ch3. Conceptualizing Interaction</p>
+<p>3.1 Introduction</p>
+<p>3.2 Conceptualizing Interaction</p>
+<p>3.3 Conceptual Models</p>
+<p>3.4 Interface Metaphors</p>
+<p>3.5 Interaction Types</p>
+<p>3.6 Paradigms, Visions, Challenges, Theories, Models, and Frameworks</p></li>
+<li><p>ch4. Cognitive Aspects</p>
+<p>4.1 Introduction</p>
+<p>4.2 What Is Cognition?</p>
+<p>4.3 Cognitive Frameworks</p></li>
+<li><p>ch5. Social Interaction</p>
+<p>5.1 Introduction</p>
+<p>5.2 Being Social</p>
+<p>5.3 Face-to-Face Conversations</p>
+<p>5.4 Remote Collaboration and Communication</p>
+<p>5.5 Co-Presence</p>
+<p>5.6 Social Games</p></li>
+<li><p>ch6. Emotional Interaction</p>
+<p>6.1 Introduction</p>
+<p>6.2 Emotions and Behavior</p>
+<p>6.3 Expressive Interfaces: Aesthetic or Annoying?</p>
+<p>6.4 Affective Computing and Emotional AI</p>
+<p>6.5 Persuasive Technologies and Behavioral Change</p>
+<p>6.6 Anthropomorphism</p></li>
+<li><p>ch7. Interfaces</p>
+<p>7.1 Introduction</p>
+<p>7.2 Interface Types</p>
+<p>7.3 Natural User Interfaces and Beyond</p>
+<p>7.4 Which Interface?</p></li>
+<li><p>ch8. Data Gathering</p>
+<p>8.1 Introduction</p>
+<p>8.2 Six Key Issues</p>
+<p>8.3 Capturing Data</p>
+<p>8.4 Interviews</p>
+<p>8.5 Questionnaires</p>
+<p>8.6 Observation</p>
+<p>8.7 Putting the Techniques to Work</p></li>
+<li><p>ch9. Data Analysis, Interpretation and Presentation</p>
+<p>9.1 Introduction</p>
+<p>9.2 Quantitative and Qualitative</p>
+<p>9.3 Basic Quantitative Analysis</p>
+<p>9.4 Basic Qualitative Analysis</p>
+<p>9.5 Analytical Frameworks</p>
+<p>9.6 Tools to Support Data Analysis</p>
+<p>9.7 Interpreting and Presenting the Findings</p></li>
+<li><p>ch10. Data at Scale, and Ethical Concerns</p>
+<p>10.1 Introduction</p>
+<p>10.2 Approaches for Collecting and Analyzing Data</p>
+<p>10.3 Visualizing and Exploring Data</p>
+<p>10.4 Ethical Design Concerns</p></li>
+<li><p>ch11. Discovering Requirements</p>
+<p>11.1 Introduction</p>
+<p>11.2 What, How, and Why?</p>
+<p>11.3 What Are Requirements?</p>
+<p>11.4 Data Gathering for Requirements</p>
+<p>11.5 Bringing Requirements to Life: Personas and Scenarios</p>
+<p>11.6 Capturing Interaction with Use Cases</p></li>
+<li><p>ch12. Design, Prototyping and Construction</p>
+<p>12.1 Introduction</p>
+<p>12.2 Prototyping</p>
+<p>12.3 Conceptual Design</p>
+<p>12.4 Concrete Design</p>
+<p>12.5 Generating Prototypes</p>
+<p>12.6 Construction</p></li>
+<li><p>ch13. Interaction Design in Practice</p>
+<p>13.1 Introduction</p>
+<p>13.2 AgileUX</p>
+<p>13.3 Design Patterns</p>
+<p>13.4 Open Source Resources</p>
+<p>13.5 Tools for Interaction Design</p></li>
+<li><p>ch14. Introducing Evaluation</p>
+<p>14.1 Introduction</p>
+<p>14.2 The Why, What, Where, and When of Evaluation</p>
+<p>14.3 Types of Evaluation</p>
+<p>14.4 Evaluation Case Studies</p>
+<p>14.5 What Did We Learn from the Case Studies?</p>
+<p>14.6 Other Issues to Consider When Doing Evaluation</p></li>
+<li><p>ch15. Evaluation studies: from Controls to Natural Settings</p>
+<p>15.1 Introduction</p>
+<p>15.2 Usability Testing</p>
+<p>15.3 Conducting Experiments</p>
+<p>15.4 In-the-Wild Studies</p></li>
+<li><p>ch16. Evaluation: Inspections, Analytics and Models</p>
+<p>16.1 Introduction</p>
+<p>16.2 Inspections: Heuristic Evaluation and Walk-Throughs</p>
+<p>16.3 Analytics and A/B Testing</p>
+<p>16.4 Predictive Models</p></li>
+</ul>
+<p><a href="http://id-book.com">Interaction Design - beyond Human-Computer Interaction</a></p>
+</section>
+<section id="실습과제-1-내-디자인-프로젝트-리뷰" class="level3" data-number="2.0.5">
+<h3 data-number="2.0.5" class="anchored" data-anchor-id="실습과제-1-내-디자인-프로젝트-리뷰"><span class="header-section-number">2.0.5</span> 실습과제 1 : 내 디자인 프로젝트 리뷰</h3>
+<ul>
+<li><p>본인이 경험한 디자인 프로젝트 2개를 선정하여 디자인 내용과 결과물을 요약 정리해보세요. (1 page) 그리고 각 프로젝트의 과정과 방법을 다이어그램으로 표현합니다(2 page). 각 프로젝트의 목표와 상황에 맞게 디자인 프로세스와 방법이 수행 되었는지를 스스로 평가하고, 개선 방향이 있으면 제시합니다.(3 page)</p>
+<p>이 과정을 통하여 현재 본인이 경험해본 디자인 내용과 디자인 과정, 방법에 대하여 이해하고, 본인의 포트폴리오가 어떻게 평가자의 시각에서 평가 될지를 검토해볼 수 있으며, 향후에 어떤 디자인 프로젝트를 수행할지 계획할 수 있습니다.</p>
+<p>page 1: 프로젝트 개요, 디자인 콘셉트, 디자인 해결안 포함</p>
+<p>page 2: 프로젝트의 Process, Methodology diagram</p>
+<p>page 3: 프로젝트의 디자인 과정과 방법론에 대한 평가, 향후 계획</p>
+<p>각 프로젝트 당 3페이지 이내의 요약 보고서를 제작 (총 6페이지 이내)</p></li>
+<li><p>(자율학습) 참고 교재의 목차 안내를 보면서 각 키워드에 대하여 얼마나 이해하고 있는지 확인하고, 개인적으로 보강해야할 키워드가 있으면 공부해 봅니다. 본 교재에서는 예시 목차의 8장에서 13장의 내용들, 그리고 16장과 관련하여 공부합니다.</p></li>
+</ul>
+</section>
+<section id="실습과제-1-check-point" class="level3" data-number="2.0.6">
+<h3 data-number="2.0.6" class="anchored" data-anchor-id="실습과제-1-check-point"><span class="header-section-number">2.0.6</span> 실습과제 1 Check Point!</h3>
+<p>본인이 수행한 연습과제1의 결과물을 아래의 시각으로 평가해 봅시다.</p>
+<ul>
+<li>page 1에서 프로젝트의 내용을 잘 설명하고 있는가?
+<ul>
+<li>프로젝트 개요에서 프로젝트의 핵심을 설명하고 있는가.</li>
+<li>디자인 콘셉트가 디자인 해결안을 결정할 가치있는 내용을 담고 있는가.</li>
+<li>프로젝트의 목표와 범위에 맞는 디자인 해결안을 제시하였는가.</li>
+</ul></li>
+<li>page 2에서 디자인 프로세스와 방법론을 잘 분석하였는가?
+<ul>
+<li>프로젝트에 디자인 프로세스 (더블다이아몬드 모델 등)를 어떻게 반영하였는지 설명하는가.</li>
+<li>디자인 프로세스에 포함된 여러 디자인 활동들의 연계가 잘 논리적으로 합당한가.</li>
+<li>여러 리서치 방법들을 적용했다고 좋은 리서치가 아님. 목적에 맞는 리서치 방법론을 통하여 가치있는 디자인 인사이트 발견이 있어야함.</li>
+</ul></li>
+<li>page 3에서 이상의 관점으로 본인의 프로젝트를 분석하고, 본인이 사용한 디자인 방법론에 대한 장단점을 서술함. 단점이 발견된 경우 어떻게 보강할 것인지를 서술함.</li>
+</ul>
+<p>(문헌1) Yvonne Rogers, Helen Sharp, Jennifer Preece, 『Interaction Design: Beyond Human-Computer Interaction 6th edition』, Wiley. Kindle Edition, (2023)</p>
+<p>(문헌2) Kate Moran, Sarah Gibbons, “Generative UI and Outcome-Oriented Design”, <a href="https://www.nngroup.com/articles/generative-ui/" class="uri">https://www.nngroup.com/articles/generative-ui/</a>, (2024)</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "복사완료!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "복사완료!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="머릿말: 이 책에서 다루는 것과 다루지 않는 것">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">머릿말: 이 책에서 다루는 것과 다루지 않는 것</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./1-2 UX 디자인과 데이터, AI.html" class="pagination-link" aria-label="1-2. UX 디자인과 데이터, AI">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">1-2. UX 디자인과 데이터, AI</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
