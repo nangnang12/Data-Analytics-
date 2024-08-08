@@ -1,0 +1,273 @@
+---
+format: 
+  pdf:
+    css: styles.css
+---
+
+# 1-1. UX 디자인의 오늘과 변화의 방향
+
+본 교재가 UX 디자인의 방법론으로서의 데이터 기반 디자인과 A/B 테스팅을 주제로 다루고 있으므로, 이 주제가 UX 디자인의 전체 모습에서 어떻게 위치하고 있는지를 이해하기 위하여 UX 디자인의 큰 그림을 한 번 조망해 볼 필요가 있다고 생각됩니다. 이 큰 그림을 제가 가진 제한된 경험 안에서 스스로 그려내기는 어려울 것 같고, 오랜 시간동안 제가 근간으로 여겨 온 한 권의 책을 기준으로 책 내용의 목차 변화를 관찰해 보면서 서술하고자 합니다. Interaction Design - beyond Human-Computer Interaction, 이 책은 2002년 첫 판이 나온 이후 업데이트를 지속하여 2023년 6판이 나와있는 책인데, 제목에 UX 디자인이라는 말이 들어있지도 않고, 저자들이 디자이너도 아니지만, 오랜 시간 UX디자인의 지식 변화를 교과서 형식의 책으로 담아왔다는 점에서 관심있게 볼 만한 지식 체계라고 생각합니다.(1) 이 책의 모든 개정판을 읽어온 독자로서 발견한 UX 디자인의 키워드 변화들을 중심으로 UX 디자인이 어떤 방향을 바라보고 있는지를 정리해 보겠습니다.
+
+### Switching to Digital (디자인 대상의 변화)
+
+1990년대 중반 이전에는 복잡하고 기능이 많은 전자 기기들이 대표적인 UX 디자인의 대상으로 인식 되었다면, 그 대상은 인터넷을 플랫폼으로 하는 웹과 모바일 디바이스에서 구현되는 앱 서비스로 진화해왔고, 이들은 또 플랫폼의 경계가 없거나, 매우 다양한 플랫폼에서 제공되는 서비스 및 가상 세계의 사용자 경험으로, 나아가 우리가 경험해 온 물리적 세계에서는 존재하지 않았던 인공지능과 로봇, 그 외의 다양한 디지털 존재들이 공존하는 세계에 대한 디자인으로 확장되고 있습니다. 이러한 사용자 경험 확대 현상의 배경에는 점점 더 커지고 있는 디지털 데이터와 디지털 서비스 기술이 있습니다. 시간과 공간, 물리적 한계를 넘어서는 경험에 대한 UX 디자인은 계속 새로이 창조되고 있으며, 기술의 발전을 바탕으로 그 다양성과 속도가 가속화 되는 중입니다. UX 디자인은 사용자들의 눈높이에 맞는 경험을 제공하는 번역가의 역할에서, 새로운 경험을 창조하고 소개하는 소설가 같은 역할로 변모하고 있습니다. 우리는 현재 시점의 사용자 경험의 영역에 머무르지 말고, 아직 발견되지 않은 새로운 경험의 영역에 대하여 열린 마음을 갖고 탐험할 준비가 되어 있어야 하겠습니다.
+
+### from User to People (서비스를 사용하는 주체의 변화)
+
+보통 UX 디자인을 제공하는 대상은 사용자(User)로 부르고, 사용자 중심의 디자인(UCD :User Centered Design)은 사용자 경험 디자인의 가장 기본적인 패러다임으로 인식되었습니다. 그런데 이 사용자의 개념이 확장되고 있습니다. 이 확장된 사용자는 사람(People)으로 부릅니다. (이것 참 People 번역을 어떻게 하는게 적절할지 모르겠네요.) ‘People’은 인지 과학자이며, UX 디자인 연구자인 도널드 노먼(Don Norman)이 2018년 제시한 용어로, 개별 사용자 뿐 아니라 여러 사람이 모인 집단, 나아가 사회 구성원들을 의미하는 단어로 소셜 미디어 같이 많은 사람들이 참여하는 커뮤니티를 포함하는 보다 넓은 사용자의 개념입니다. 사람 중심의 디자인(People Centered Design)은 기존의 개별 사용자, 또는 특정 속성을 가지는 사용자 집단의 니즈(Needs)와 역량에 맞추어 사용자 경험을 제공하는 서비스 보다는 더 넓은 범위인 일반 사용자들의 경험과 신체적, 인지적, 사회적 제약이 있는 사용자들도 누구나 참여할 수 있는 사용자 경험을 지향합니다. 그만큼 UX 디자인을 제공하는 대상이 넓어지고, 대중화 되었다는 의미이기도 하고, 어떤 서비스의 경험을 디자인 할 때, 서비스를 직접 사용하는 사용자의 범위가 넓어진 만큼이나 그 서비스와 직접, 또는 간접적으로 관련된 사람들도 다양하고 많아졌다는 의미입니다.
+
+예를 들어, 디지털 금융 서비스는 각 개별 사용자의 금융 정보에 대한 서비스로서, 어떤 디바이스를 사용하는 지에 상관없이 사용 가능해야하며, 신체적 제약이 있는 사용자에게도 문제없이 서비스를 제공해야 합니다. 또 이것은 은행 사용자가 고객 사용자들의 금융 정보를 관리하는 서비스이고, 각 은행의 금융 정보는 통합, 또는 재구성 되어 제 3의 사용자를 통하여 새로운 금융 정보를 생성하기도 합니다. 그리고 이 정보들은 각 개인들 뿐 아니라, 세금 수납과 보험료 납부와 같은 행정 업무를 바탕으로 여러 공공 기관을 비롯한 기업 사용자들과도 연계되어 있습니다. ATM 단말기 같은 디바이스에서 한 개인의 계좌에 입력된 단편적인 금융 정보는 수많은 금융 관련 시스템에서 다양한 시각으로 해석되고, 재생산됩니다. 이렇게 현재의 사용자의 개념은 작용 대상이 넓고, 다양한 시각을 가지는 주체들의 총합으로 이해되어야 합니다.
+
+그리고 많은 서비스의 경우 사용자의 국적이나 언어, 거주지 등, 물리적인 제약과 관련 없이 사용되고, 사용 상황이 다른 여러 사용자간의 상호 협력을 지원하며, 심지어는 인간 사용자가 아닌 기계(인공지능)와의 협력 방법들도 제공하고 있습니다. 이렇게 넓고 다중적인 사용자 경험을 제공하기 위하여 디자이너는 다양한 사용자 요구를 이해하고 반영할 수 있는 역량을 준비해야 하겠습니다.
+
+### Data Driven Design (디자인 방법론의 변화)
+
+UX 디자인의 도구나 방법의 영역에서는 데이터의 활용이 중요한 키워드로 떠오르고 있습니다. 사용자들이 디지털 서비스를 사용하면서 남기는 사용자 행동의 흔적들은 거대한 데이터가 되어 사용자 경험의 내용을 통계적으로 측정할 수 있도록 합니다. 지금까지 디자인 리서치에 주로 사용해온 대면 조사, 사용 현장 중심의 조사 방법론들이 소수의 사용자들을 대상으로한 질적 연구였다면, 데이터를 이용한 디자인 방법론은 대규모 사용자를 대상으로 통계적 분석과 사용자 경험의 통계적 모델링을 가능하게 하는 연구이며, 지속적인 데이터 축적을 통하여 서비스 변화에 따른 결과 예측이 가능하고, 다양한 협업 부서와 연계하여 데이터의 활용도를 높이는 방법론입니다. 이제는 디지털 디바이스들을 통하여 데이터를 축적하고, 이 데이터를 활용하여 사용자 경험을 이해하는 방법, 데이터 중심의 디자인 프로세스, 데이터 기반의 다양한 협업 방법, 데이터 기반의 디자인 평가와 예측 기법 등이 UX 디자인 방법론의 영역으로 들어왔습니다. 이 책은 이러한 데이터와 UX 디자인의 연결 지점들을 검토하고, 디자이너의 시각에서 데이터를 이해하고 관리하는 방법을 실행해보는 실습 내용을 제공합니다. 이 책의 안내를 바탕으로 독자 여러분의 디자인 학습과 실행의 과정에 데이터 기반 디자인 방법들이 잘 활용될 수 있기를 바랍니다.
+
+아래의 기사에서는 AI가 개별 사용자의 데이터를 바탕으로 각 사용자에게 맞는 UI를 자동적으로 실시간 생성하여 제공하는 Generative UI 시대의 도래를 예고하고 있습니다. 서비스의 UX/UI를 디자이너가 미리 만들어 두고 예상 경로대로 제시하는 것이 아니라, 사용자의 니즈와 사용 데이터에 따라 각 사용자에게 필요한 서비스를 실시간으로 구성해내는 것입니다. 이렇게 된다면 디자이너는 사용자의 니즈를 매우 다른 방법으로 측정하고 디자인하게 될 것입니다. (2)
+
+[Generative UI and Outcome-Oriented Design](https://www.nngroup.com/articles/generative-ui/)
+
+### 참고 교재의 목차로 알아보는 UX Design의 키워드
+
+다음의 내용은 본 교재의 학습 내용에 대한 것은 아니지만, UX Design의 지식 체계에 대한 큰 그림을 키워드로 볼 수 있다고 생각되어 앞에서 소개한 참고도서인 Interaction Design의 목차를 소개합니다.(1) 목차의 내용을 보면서 어떤 키워드들을 공부해하는지 확인해 보세요. 특히 소제목의 키워드들을 보면 최근의 UX 디자인의 이슈들을 잘 체감할 수 있습니다. (웹 버전은 드롭 다운으로 소제목이 보이게 하기)
+
+-   ch1. What is Interaction Design?
+
+    1.1 Introduction
+
+    1.2 Good and Poor Design
+
+    1.3 Switching to Digital
+
+    1.4 What to Design
+
+    1.5 What Is Interaction Design?
+
+    1.6 People-Centered Design
+
+    1.7 Understanding People
+
+    1.8 Accessibility and Inclusiveness
+
+    1.9 Usability and User Experience Goals
+
+-   ch2. The process of Interaction Design?
+
+    2.1 Introduction
+
+    2.2 What Is Involved in Interaction Design?
+
+    2.3 Some Practical Issues
+
+-   ch3. Conceptualizing Interaction
+
+    3.1 Introduction
+
+    3.2 Conceptualizing Interaction
+
+    3.3 Conceptual Models
+
+    3.4 Interface Metaphors
+
+    3.5 Interaction Types
+
+    3.6 Paradigms, Visions, Challenges, Theories, Models, and Frameworks
+
+-   ch4. Cognitive Aspects
+
+    4.1 Introduction
+
+    4.2 What Is Cognition?
+
+    4.3 Cognitive Frameworks
+
+-   ch5. Social Interaction
+
+    5.1 Introduction
+
+    5.2 Being Social
+
+    5.3 Face-to-Face Conversations
+
+    5.4 Remote Collaboration and Communication
+
+    5.5 Co-Presence
+
+    5.6 Social Games
+
+-   ch6. Emotional Interaction
+
+    6.1 Introduction
+
+    6.2 Emotions and Behavior
+
+    6.3 Expressive Interfaces: Aesthetic or Annoying?
+
+    6.4 Affective Computing and Emotional AI
+
+    6.5 Persuasive Technologies and Behavioral Change
+
+    6.6 Anthropomorphism
+
+-   ch7. Interfaces
+
+    7.1 Introduction
+
+    7.2 Interface Types
+
+    7.3 Natural User Interfaces and Beyond
+
+    7.4 Which Interface?
+
+-   ch8. Data Gathering
+
+    8.1 Introduction
+
+    8.2 Six Key Issues
+
+    8.3 Capturing Data
+
+    8.4 Interviews
+
+    8.5 Questionnaires
+
+    8.6 Observation
+
+    8.7 Putting the Techniques to Work
+
+-   ch9. Data Analysis, Interpretation and Presentation
+
+    9.1 Introduction
+
+    9.2 Quantitative and Qualitative
+
+    9.3 Basic Quantitative Analysis
+
+    9.4 Basic Qualitative Analysis
+
+    9.5 Analytical Frameworks
+
+    9.6 Tools to Support Data Analysis
+
+    9.7 Interpreting and Presenting the Findings
+
+-   ch10. Data at Scale, and Ethical Concerns
+
+    10.1 Introduction
+
+    10.2 Approaches for Collecting and Analyzing Data
+
+    10.3 Visualizing and Exploring Data
+
+    10.4 Ethical Design Concerns
+
+-   ch11. Discovering Requirements
+
+    11.1 Introduction
+
+    11.2 What, How, and Why?
+
+    11.3 What Are Requirements?
+
+    11.4 Data Gathering for Requirements
+
+    11.5 Bringing Requirements to Life: Personas and Scenarios
+
+    11.6 Capturing Interaction with Use Cases
+
+-   ch12. Design, Prototyping and Construction
+
+    12.1 Introduction
+
+    12.2 Prototyping
+
+    12.3 Conceptual Design
+
+    12.4 Concrete Design
+
+    12.5 Generating Prototypes
+
+    12.6 Construction
+
+-   ch13. Interaction Design in Practice
+
+    13.1 Introduction
+
+    13.2 AgileUX
+
+    13.3 Design Patterns
+
+    13.4 Open Source Resources
+
+    13.5 Tools for Interaction Design
+
+-   ch14. Introducing Evaluation
+
+    14.1 Introduction
+
+    14.2 The Why, What, Where, and When of Evaluation
+
+    14.3 Types of Evaluation
+
+    14.4 Evaluation Case Studies
+
+    14.5 What Did We Learn from the Case Studies?
+
+    14.6 Other Issues to Consider When Doing Evaluation
+
+-   ch15. Evaluation studies: from Controls to Natural Settings
+
+    15.1 Introduction
+
+    15.2 Usability Testing
+
+    15.3 Conducting Experiments
+
+    15.4 In-the-Wild Studies
+
+-   ch16. Evaluation: Inspections, Analytics and Models
+
+    16.1 Introduction
+
+    16.2 Inspections: Heuristic Evaluation and Walk-Throughs
+
+    16.3 Analytics and A/B Testing
+
+    16.4 Predictive Models
+
+[Interaction Design - beyond Human-Computer Interaction](http://id-book.com)
+
+### 실습과제 1 : 내 디자인 프로젝트 리뷰
+
+-   본인이 경험한 디자인 프로젝트 2개를 선정하여 디자인 내용과 결과물을 요약 정리해보세요. (1 page) 그리고 각 프로젝트의 과정과 방법을 다이어그램으로 표현합니다(2 page). 각 프로젝트의 목표와 상황에 맞게 디자인 프로세스와 방법이 수행 되었는지를 스스로 평가하고, 개선 방향이 있으면 제시합니다.(3 page)
+
+    이 과정을 통하여 현재 본인이 경험해본 디자인 내용과 디자인 과정, 방법에 대하여 이해하고, 본인의 포트폴리오가 어떻게 평가자의 시각에서 평가 될지를 검토해볼 수 있으며, 향후에 어떤 디자인 프로젝트를 수행할지 계획할 수 있습니다.
+
+    page 1: 프로젝트 개요, 디자인 콘셉트, 디자인 해결안 포함
+
+    page 2: 프로젝트의 Process, Methodology diagram
+
+    page 3: 프로젝트의 디자인 과정과 방법론에 대한 평가, 향후 계획
+
+    각 프로젝트 당 3페이지 이내의 요약 보고서를 제작 (총 6페이지 이내)
+
+-   (자율학습) 참고 교재의 목차 안내를 보면서 각 키워드에 대하여 얼마나 이해하고 있는지 확인하고, 개인적으로 보강해야할 키워드가 있으면 공부해 봅니다. 본 교재에서는 예시 목차의 8장에서 13장의 내용들, 그리고 16장과 관련하여 공부합니다.
+
+### 실습과제 1 Check Point!
+
+본인이 수행한 연습과제1의 결과물을 아래의 시각으로 평가해 봅시다.
+
+-   page 1에서 프로젝트의 내용을 잘 설명하고 있는가?
+    -   프로젝트 개요에서 프로젝트의 핵심을 설명하고 있는가.
+    -   디자인 콘셉트가 디자인 해결안을 결정할 가치있는 내용을 담고 있는가.
+    -   프로젝트의 목표와 범위에 맞는 디자인 해결안을 제시하였는가.
+-   page 2에서 디자인 프로세스와 방법론을 잘 분석하였는가?
+    -   프로젝트에 디자인 프로세스 (더블다이아몬드 모델 등)를 어떻게 반영하였는지 설명하는가.
+    -   디자인 프로세스에 포함된 여러 디자인 활동들의 연계가 잘 논리적으로 합당한가.
+    -   여러 리서치 방법들을 적용했다고 좋은 리서치가 아님. 목적에 맞는 리서치 방법론을 통하여 가치있는 디자인 인사이트 발견이 있어야함.
+-   page 3에서 이상의 관점으로 본인의 프로젝트를 분석하고, 본인이 사용한 디자인 방법론에 대한 장단점을 서술함. 단점이 발견된 경우 어떻게 보강할 것인지를 서술함.
+
+(문헌1) Yvonne Rogers, Helen Sharp, Jennifer Preece, 『Interaction Design: Beyond Human-Computer Interaction 6th edition』, Wiley. Kindle Edition, (2023)
+
+(문헌2) Kate Moran, Sarah Gibbons, “Generative UI and Outcome-Oriented Design”, <https://www.nngroup.com/articles/generative-ui/>, (2024)
